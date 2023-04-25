@@ -1,0 +1,15 @@
+app:
+  name: poi-map-app
+  namespace: suxess-it-qa
+  cluster: .apps.cluster1.mcp.pitagora.at
+
+git:
+  branch: main
+  repo: https://github.com/phac008/suxess-it-qa-frontend
+  org: phac008
+  name: suxess-it-qa-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: suxess-it-qa/poi-map-app
+  tag: latest

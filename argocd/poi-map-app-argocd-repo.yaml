@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: suxess-it-qa-poi-map-app-repo
+  namespace: suxess-it-admin
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/phac008/suxess-it-qa-frontend-gitops
